@@ -3,6 +3,8 @@
 // const request = supertest('http://localhost:3000');
 // import { CreateUser } from "./userServiceTest";
 
+import { Multiplos } from "./userServiceTest";
+
 // describe("UserService", () => {
 
 //     test('deberia haber una funcion', () => {
@@ -27,45 +29,45 @@
 
 // });
 
-// describe.skip('ExampleMultiplos', () => {
-//     test.skip('verificamos si hay funcion', () => {
-//         expect(typeof Multiplos).toBe('function');
-//     });
+describe('ExampleMultiplos', () => {
+    test.skip('verificamos si hay funcion', () => {
+        expect(typeof Multiplos).toBe('function');
+    });
 
-//     test.skip('verificamos que los datos no esten vacios', () => {
-//         expect(() => Multiplos(null)).toThrow("No se puede campos vacios");
-//         expect(() => Multiplos(NaN)).toThrow("No se puede campos vacios");
-//         expect(() => Multiplos(undefined)).toThrow("No se puede campos vacios");
-//     });
+    test.skip('verificamos que los datos no esten vacios', () => {
+        expect(() => Multiplos(null)).toThrow("No se puede campos vacios");
+        expect(() => Multiplos(NaN)).toThrow("No se puede campos vacios");
+        expect(() => Multiplos(undefined)).toThrow("No se puede campos vacios");
+    });
 
-//     test.skip('verificamos el dato que recibimos solo sea numero', () => {
-//         expect(() => Multiplos('3')).toThrow("Solo se pueden numeros");
-//         expect(() => Multiplos(true)).toThrow("Solo se pueden numeros");
-//     });
+    test.skip('verificamos el dato que recibimos solo sea numero', () => {
+        expect(() => Multiplos('3')).toThrow("Solo se pueden numeros");
+        expect(() => Multiplos(true)).toThrow("Solo se pueden numeros");
+    });
 
-//     test('verificamos la funcion devuelva el valor', () => {
-//         expect(Multiplos(1)).toBe(1);
-//         expect(Multiplos(2)).toBe(2);
-//     });
+    test('verificamos la funcion devuelva el valor', () => {
+        expect(Multiplos(1)).toBe(1);
+        expect(Multiplos(2)).toBe(2);
+    });
 
-//     test('verificamos si devuelve "fizz" cuando el valor es 3', () => {
-//         expect(Multiplos(3)).toBe('fizz');
-//     });
+    test('verificamos si devuelve "fizz" cuando el valor es 3', () => {
+        expect(Multiplos(3)).toBe('fizz');
+    });
 
-//     test('verificamos si devuelve "fizz" cuando el valor es multiplo de 3', () => {
-//         expect(Multiplos(3)).toBe('fizz');
-//         expect(Multiplos(6)).toBe('fizz');
-//         expect(Multiplos(9)).toBe('fizz');
-//     });
+    test('verificamos si devuelve "fizz" cuando el valor es multiplo de 3', () => {
+        expect(Multiplos(3)).toBe('fizz');
+        expect(Multiplos(6)).toBe('fizz');
+        expect(Multiplos(9)).toBe('fizz');
+    });
 
-//     test('verificamos si devuelve "buzz" cuando el valor es multiplo de 5', () => {
-//         expect(Multiplos(5)).toBe('buzz');
-//         expect(Multiplos(10)).toBe('buzz');
-//         //expect(CreateUser(15)).toBe('buzz');
-//     });
+    test('verificamos si devuelve "buzz" cuando el valor es multiplo de 5', () => {
+        expect(Multiplos(5)).toBe('buzz');
+        expect(Multiplos(10)).toBe('buzz');
+        //expect(CreateUser(15)).toBe('buzz');
+    });
 
-//     test('verificamos si devuelve "fizzbuzz" cuando el valor es multiplo de 3 y de 5"', () => {
-//         expect(Multiplos(15)).toBe('fizzbuzz');
-//     });
+    test('verificamos si devuelve "fizzbuzz" cuando el valor es multiplo de 3 y de 5"', () => {
+        expect(Multiplos(15)).toBe('fizzbuzz');
+    });
 
-// });
+});
