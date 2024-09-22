@@ -1,0 +1,18 @@
+version: "4"
+services:
+  mongo:
+    image: mongo:latest
+    restart: always
+    container_name: mydatabase
+    environment:
+      - MONGO_INITDB_ROOT_PASSWORD=root
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_DATABASE=user_service
+    ports:
+      - "27017:27017"
+    volumes:
+      - db:/data/db
+
+volumes:
+  db:
+    driver: local

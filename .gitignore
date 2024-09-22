@@ -1,0 +1,10 @@
+# Serverless directories
+.serverless
+.build
+# text
+data.txt
+# package directories
+jspm_packages
+node_modules
+# package directories
+#app/test/*
